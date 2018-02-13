@@ -5,6 +5,7 @@ import { Route } from 'react-router-dom';
 import NavigationComponent from './components/navigation';
 import ProfileComponent from './components/pages/profile';
 import DashboardComponent from './components/pages/dashboard';
+import ApiComponent from './components/pages/api';
 
 import './App.css';
 
@@ -25,6 +26,7 @@ class App extends Component {
         <div className="col-md-9">
           <Route path='/profile' component={ProfileComponent}/>
           <Route path='/dashboard' component={DashboardComponent}/>
+          <Route path='/fetchapi' component={ApiComponent} />
         </div>
       </div>
     </div>);
